@@ -1,8 +1,11 @@
 describe("FizzBuzz", function() {
-  it("should do something", function() {
-    expect(1).toEqual(1);
+  it("return number", function() {
+    expect (fizzBuzz(1)).toEqual(1);
   });
+it ("returns Fizz if number is divideable by three",function (){
+  expect(fizzBuzz(3)). toEqual(Fizz);
+});
 
-  // Add more specs here
+
 
 });
