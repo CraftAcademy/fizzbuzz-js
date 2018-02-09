@@ -3,6 +3,7 @@ describe("FizzBuzz", function() {
     expect(1).toEqual(1);
   });
 
-  // Add more specs here
-
+  it("returns Fizz if divisible by three", function() {
+    expect(3).toEqual("Fizz");
+  });
 });
