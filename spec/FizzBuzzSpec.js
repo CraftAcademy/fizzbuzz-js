@@ -4,6 +4,11 @@ describe("FizzBuzz", function() {
   });
 
   it("returns Fizz if divisible by three", function() {
-    expect(3).toEqual("Fizz");
+    expect(FizzBuzz(3)).toEqual("Fizz");
   });
+
+  it("returns Buzz if divisible by five", function() {
+    expect(FizzBuzz(5)).toEqual("Buzz");
+  });
+  
 });

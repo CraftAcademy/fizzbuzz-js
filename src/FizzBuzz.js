@@ -2,11 +2,10 @@ function FizzBuzz(){
 }
 
 FizzBuzz.prototype.divisibleByThree = function(num) {
-  if (num%3 === 0) {
-    return "Fizz";
-  }
-};
+  (num%3 === 0);
 
 FizzBuzz.prototype.fizzBuzz = function(num) {
-  divisibleByThree(num);
+  if (this.divisibleByThree(num)) {
+    return "Fizz"
+  };
 };
