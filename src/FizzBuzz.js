@@ -1,15 +1,19 @@
 const FizzBuzz = {
   eval(number) {
-    if (number % 15 == 0) {
+    if (is_dividable_by(number,15)) {
       return 'FizzBuzz';
-    } else if (number % 3 == 0){
+    } else if (is_dividable_by(number,3)){
       return 'Fizz';
-    } else if (number % 5 == 0){
+    } else if (is_dividable_by(number,5)){
       return 'Buzz';
     } else {
       return number;
     }
   }
+};
+
+function  is_dividable_by(number , factor){
+  return number % factor == 0;
 };
 
 export default FizzBuzz;
